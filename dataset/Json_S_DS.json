@@ -1,0 +1,111 @@
+{
+	"name": "Json_S_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "*.*",
+				"container": "raw"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CustomerKey": {
+					"type": "integer"
+				},
+				"GeographyKey": {
+					"type": "integer"
+				},
+				"CustomerAlternateKey": {
+					"type": "string"
+				},
+				"Title": {
+					"type": "string"
+				},
+				"FirstName": {
+					"type": "string"
+				},
+				"MiddleName": {
+					"type": "string"
+				},
+				"LastName": {
+					"type": "string"
+				},
+				"NameStyle": {
+					"type": "integer"
+				},
+				"BirthDate": {
+					"type": "string"
+				},
+				"MaritalStatus": {
+					"type": "string"
+				},
+				"Suffix": {
+					"type": "string"
+				},
+				"Gender": {
+					"type": "string"
+				},
+				"EmailAddress": {
+					"type": "string"
+				},
+				"YearlyIncome": {
+					"type": "integer"
+				},
+				"TotalChildren": {
+					"type": "integer"
+				},
+				"NumberChildrenAtHome": {
+					"type": "integer"
+				},
+				"EnglishEducation": {
+					"type": "string"
+				},
+				"SpanishEducation": {
+					"type": "string"
+				},
+				"FrenchEducation": {
+					"type": "string"
+				},
+				"EnglishOccupation": {
+					"type": "string"
+				},
+				"SpanishOccupation": {
+					"type": "string"
+				},
+				"FrenchOccupation": {
+					"type": "string"
+				},
+				"HouseOwnerFlag": {
+					"type": "integer"
+				},
+				"NumberCarsOwned": {
+					"type": "integer"
+				},
+				"AddressLine1": {
+					"type": "string"
+				},
+				"AddressLine2": {
+					"type": "string"
+				},
+				"Phone": {
+					"type": "string"
+				},
+				"DateFirstPurchase": {
+					"type": "string"
+				},
+				"CommuteDistance": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

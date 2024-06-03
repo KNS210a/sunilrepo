@@ -1,0 +1,36 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"username": {
+				"type": "string",
+				"defaultValue": "sa"
+			},
+			"pwd": {
+				"type": "string",
+				"defaultValue": "sunil"
+			},
+			"schemanname": {
+				"type": "string",
+				"defaultValue": "dbo"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-9ATO7NC",
+			"database": "master",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"hostNameInCertificate": "",
+			"authenticationType": "SQL",
+			"userName": "@{linkedService().username}",
+			"password": "@{linkedService().pwd}"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

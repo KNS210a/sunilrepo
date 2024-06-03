@@ -1,0 +1,9 @@
+{
+	"name": "suadfprd",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c44b4335-6f69-4d3a-af51-b4c316969884",
+		"tenantId": "107d2f10-3ce8-4c0e-9525-d7fb840f6e1e"
+	}
+}
