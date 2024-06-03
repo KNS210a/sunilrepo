@@ -1,0 +1,59 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "customer.json",
+				"container": "raw"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"CUST_CODE": {
+					"type": "string"
+				},
+				"CUST_NAME": {
+					"type": "string"
+				},
+				"CUST_CITY": {
+					"type": "string"
+				},
+				"WORKING_AREA": {
+					"type": "string"
+				},
+				"CUST_COUNTRY": {
+					"type": "string"
+				},
+				"GRADE": {
+					"type": "number"
+				},
+				"OPENING_AMT": {
+					"type": "number"
+				},
+				"RECEIVE_AMT": {
+					"type": "number"
+				},
+				"PAYMENT_AMT": {
+					"type": "number"
+				},
+				"OUTSTANDING_AMT": {
+					"type": "number"
+				},
+				"PHONE_NO": {
+					"type": "string"
+				},
+				"AGENT_CODE": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
